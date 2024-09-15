@@ -12,6 +12,18 @@ pip install langchain-community
 Login to [Tavily](https://app.tavily.com/home) to get the API and set it the env variable
 TAVILY_API_KEY = 'Your Key'
 
+### Ollama installation
+Downalod it from [here](https://github.com/ollama/ollama)
+open cmd and run - 
+```ollama run llama3.1
+```
+
+Ollama will start as a background service automatically, if this is disabled, run:
+```
+# export OLLAMA_HOST=127.0.0.1 # environment variable to set ollama host
+# export OLLAMA_PORT=11434 # environment variable to set the ollama port
+ollama serve
+```
 
 ## Import all the necessary import
 ```
@@ -131,7 +143,7 @@ If you need to look up some information before asking a follow-up question, you 
 model = ChatOllama(model="llama3.1", temperature=0)  # Reduce inference cost
 abot = Agent(model, [tool], system=prompt)
 
-messages = [HumanMessage(content="my weight is 72 kg and my height is 172 and i am an male what is my BMI")]
+messages = [HumanMessage(content="Who won the most number of medals in paris olampic 2024")]
 result = abot.graph.invoke({"messages": messages})
 print(result)
 ```
