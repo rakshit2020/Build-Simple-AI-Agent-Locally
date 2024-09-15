@@ -9,6 +9,8 @@ pip install -U langgraph
 pip install langchain-ollama
 pip install langchain-community
 ```
+Login to [Tavily](https://app.tavily.com/home) to get the API and set it the env variable
+TAVILY_API_KEY = 'Your Key'
 
 
 ## Import all the necessary import
