@@ -146,7 +146,7 @@ abot = Agent(model, [tool], system=prompt)
 
 messages = [HumanMessage(content="Who won the most number of medals in paris olampic 2024")]
 result = abot.graph.invoke({"messages": messages})
-print(result)
+print(result['messages'][-1].content)
 ```
 
 **Explanation:**
