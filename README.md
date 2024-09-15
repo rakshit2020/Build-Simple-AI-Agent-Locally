@@ -15,7 +15,8 @@ TAVILY_API_KEY = 'Your Key'
 ### Ollama installation
 Downalod it from [here](https://github.com/ollama/ollama)
 open cmd and run - 
-```ollama run llama3.1
+```
+ollama run llama3.1
 ```
 
 Ollama will start as a background service automatically, if this is disabled, run:
