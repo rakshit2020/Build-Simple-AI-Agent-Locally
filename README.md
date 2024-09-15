@@ -4,6 +4,13 @@
 
 Creating AI agents can be complex, but by leveraging powerful tools like `LangGraph` and `Tavily`, we can break down the process into manageable steps. In this blog, we'll walk through how to build a simple AI agent that uses these tools to look up information dynamically. The code below will act as an interactive assistant that takes user input, processes it using a language model, and uses external tools to fetch relevant data. Let's break down the components step by step to make it easier for beginners.
 
+```
+pip install -U langgraph
+pip install langchain-ollama
+pip install langchain-community
+```
+
+
 ## Import all the necessary import
 ```
 from langgraph.graph import StateGraph, END
